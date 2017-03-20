@@ -14,12 +14,12 @@ Test file names contain the full namespace of the files tested.
 
 The utility aids in reducing the repetitive work when writing unit tests by auto-generating the setup.
 
-[x] Declares class dependencies
-[x] Declares test methods for all public methods
-[x] Constructs the class under test instance
-[x] Uses AAA syntax
-[x] Implements a default call for the method under test
-[x] Keeps tests consistent with code style naming
+- [x] Declares class dependencies
+- [x] Declares test methods for all public methods
+- [x] Constructs the class under test instance
+- [x] Uses AAA syntax
+- [x] Implements a default call for the method under test
+- [x] Keeps tests consistent with code style naming
 
 ```
 C:\TestsGenerator\bin\Debug>TestsGenerator.exe "C:\Projects\bin\Debug\Project.dll"
