@@ -20,6 +20,7 @@ The utility aids in reducing the repetitive work when writing unit tests by auto
 - [x] Uses AAA syntax
 - [x] Implements a default call for the method under test
 - [x] Keeps tests consistent with code style naming
+- [x] Adds random values for value types/ initializes reference type parameters
 
 ```
 C:\TestsGenerator\bin\Debug>TestsGenerator.exe "C:\Projects\bin\Debug\Project.dll"
