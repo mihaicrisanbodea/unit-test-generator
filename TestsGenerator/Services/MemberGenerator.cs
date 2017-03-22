@@ -94,8 +94,13 @@ namespace TestsGenerator.Services
         {
             foreach (var parameter in parameters.OrderBy(p => p.Position))
             {
+                var parameterValue = ParameterGenerator.GetValue(parameter.Type);
+                var codeExpression = parameterValue == null
+                    ? (CodeExpression) new CodeObjectCreateExpression(parameter.Type)
+                    : new CodePrimitiveExpression(ParameterGenerator.GetValue(parameter.Type));
+
                 method.Statements.Add(new CodeVariableDeclarationStatement(parameter.Type, parameter.Name,
-                    new CodeDefaultValueExpression(new CodeTypeReference(parameter.Type))));
+                    codeExpression));
             }
         }
 
