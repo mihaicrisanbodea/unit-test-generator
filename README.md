@@ -14,6 +14,7 @@ Test file names contain the full namespace of the files tested.
 
 The utility aids in reducing the repetitive work when writing unit tests by auto-generating the setup.
 
+- [x] Generates compiling test class setup
 - [x] Declares class dependencies
 - [x] Declares test methods for all public methods
 - [x] Constructs the class under test instance
